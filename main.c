@@ -1,6 +1,6 @@
 #include <limits.h>
 #include <stdio.h>
-#include "musie.h"
+#include "main.h"
 
 /**
  * main - Entry point

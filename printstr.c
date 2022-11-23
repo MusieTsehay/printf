@@ -1,4 +1,4 @@
-#include "musie.h"
+#include "main.h"
 
 /**
  * printstr- print str.
