@@ -17,7 +17,7 @@ int printbin(char *format, va_list pa)
 		return (_putchar('0'));
 	for (copia = num; copia != 0; i2++)
 	{
-		copia = copia / 8;
+		copia = copia / 2;
 	}
 	bin = malloc(i2);
 	if (!bin)
