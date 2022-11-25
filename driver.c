@@ -18,6 +18,7 @@ structype selector[] = {
 {"%s", printstr},
 {"%d", printint},
 {"%i", printint},
+{"%u", printunint},
 {"%%", printpercent},
 {"%x", printhex},
 {"%X", printHEX},
