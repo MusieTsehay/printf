@@ -4,11 +4,9 @@
  * @number: input.
  * Return: value.
  */
-int _uabs(int number)
+int _uabs(unsigned int number)
 {
-	if (number < 0)
-		return (-1 * number);
-	else
+
 		return (number);
 }
 
@@ -17,10 +15,10 @@ int _uabs(int number)
  * @number: input integer
  * Return: digit count
  */
-int ucontadordigit(int number)
+int ucontadordigit(unsigned int number)
 {
 	int count = 0;
-	int number2 = number;
+	unsigned int number2 = number;
 
 	if (number <= 0)
 		count += 1;
@@ -37,19 +35,13 @@ int ucontadordigit(int number)
  * @number: input integer
  * Return: digit count
  */
-int uinteger(int number)
+int uinteger(unsigned int number)
 {
 	unsigned int unint;
 	int count;
 
 	count = ucontadordigit(number);
-if (number < 0)
-{
-_putchar('-');
-unint = -number;
-}
-	else
-		unint = number;
+	unint = number;
 
 	if (unint >= 10)
 		integer(unint / 10);
@@ -66,8 +58,8 @@ unint = -number;
  */
 int printunint(char *format, va_list pa)
 {
-	int number = va_arg(pa, int);
-	int numero;
+	unsigned int number = va_arg(pa, int);
+	unsigned int numero;
 	(void)format;
 
 	numero = uinteger(number);

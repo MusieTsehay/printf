@@ -50,13 +50,13 @@ int main(void)
     _printf("main_0_1 %u\n", -1024);
     _printf("main_1 %u\n", 0);
     _printf("main_2 %u\n", uim);
-    _printf("main_3 %u\n", l); 
+    _printf("main_3 %u\n", UINT_MAX); 
     _printf("main_4 There is %u bytes in %u KB\n", 1024, 1);
     _printf("main_5 %u - %u = %u\n", 2048, 1024, 1024);
     _printf("main_6 %u + %u = %u\n", INT_MAX, INT_MAX, res); 
     _printf("main_7 %o\n", 1024);
     _printf("main_8 %o\n", -1024);
-    _printf("main_9 %o\n", 0);
+    _printf("main_9 %o\n", l);
     _printf("main_10 %o\n", uim);
     _printf("main_11 %o\n", ui); 
     _printf("main_12 There is %o bytes in %o KB\n", 1024, 1);
