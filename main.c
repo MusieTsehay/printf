@@ -12,13 +12,14 @@ int main(void)
     /*int len;
     //int len2;*/
     unsigned int ui,uim;
-    long int res;
+    long int res,l;
     /*void *addr;*/
 
     /*len = _printf("Let's try to printf a simple sentence.\n");
     //len2 = printf("Let's try to printf a simple sentence.\n");*/
     ui = (unsigned int)INT_MAX + 1024;
     uim = (unsigned int)INT_MAX;
+    l = (long int)UINT_MAX + 1024;
     res = (long int)INT_MAX * 2;
     /*addr = (void *)0x7ffe637541f0;*/
     /*
@@ -49,7 +50,7 @@ int main(void)
     _printf("main_0_1 %u\n", -1024);
     _printf("main_1 %u\n", 0);
     _printf("main_2 %u\n", uim);
-    _printf("main_3 %u\n", ui); 
+    _printf("main_3 %u\n", l); 
     _printf("main_4 There is %u bytes in %u KB\n", 1024, 1);
     _printf("main_5 %u - %u = %u\n", 2048, 1024, 1024);
     _printf("main_6 %u + %u = %u\n", INT_MAX, INT_MAX, res); 
